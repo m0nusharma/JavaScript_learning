@@ -90,7 +90,7 @@ handleObj({
 const myNewArr = [100, 300, 400, 700, 200];
 
 function getArray(getSecondArr) {
-  return getSecondArr[2];
+  return getSecondArr[2]; // get second value of an array
 }
 
 console.log(getArray(myNewArr));
