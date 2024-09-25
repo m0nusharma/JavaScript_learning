@@ -35,7 +35,7 @@ console.log(Teacher);
 console.log(course);
 
 // Json
-// this curly braces are a json  this is store a multiple data . that is  could API. thi is same as object but we write here key as in "keys" and " value" in dabble cots
+// this curly braces are a json  this is store a multiple data . that is  could API. this is same as object but we write here key as in "keys" and " value" in dabble cots
 {
     // we cannot white this in json
     // name: "javascript",

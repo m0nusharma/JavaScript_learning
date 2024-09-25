@@ -4,21 +4,21 @@
 // undifined => NaN.
 
 let marks = "33"
-// console.log(typeof marks)
+console.log(typeof marks)
 
 let inNumber = Number(marks);
-// console.log(typeof inNumber)
+console.log(typeof inNumber)
 
 // bool
 // 1 => true, 0 => false, 
-// "" => false , emty sting is false
+// "" => false , empty sting is false
 // ' m=abc' => is true,
 
 
 let isLoggedIn = "hvv"
 let boolInNumber = Boolean(isLoggedIn)
-// console.log(boolInNumber)
-// console.log(typeof boolInNumber)
+console.log(boolInNumber)
+console.log(typeof boolInNumber)
 
 
 

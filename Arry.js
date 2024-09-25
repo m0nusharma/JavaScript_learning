@@ -31,7 +31,7 @@ const dcHeros = ["superman", "flash", "batman"];
 
 
 const allHeros = marvelHeros + dcHeros;
-// console.log(allHeros) //it #concatenate but it makes array to string
+console.log(allHeros) //it #concatenate but it makes array to string
 console.log(typeof allHeros)
 
 marvelHeros.push(dcHeros);
@@ -90,7 +90,7 @@ myCar.unshift("W")
 myCar.unshift("G")
 console.log(myCar);
 
-myCar.splice(4,2, "O", "R")
+myCar.splice(4,2, "O", "N")
 myCar.splice(0,4, "G" , "W","A", "G" )
 console.log(myCar);
 
@@ -103,3 +103,5 @@ console.log(family);
 
 const familyy = [...perents, ... siblings]
 console.log(familyy);
+
+

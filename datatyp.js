@@ -12,13 +12,15 @@ const num = 33;
 const str = " Hello world";
 const islogIn = true;
 const value = null;
+console.log(typeof(value));
+
 let val;
 const bigNum = 123456n;
 // symbol value define as same but when we check its not same.
 const sym = Symbol("monu");
 const newSym = Symbol("monu");
 const checkSameOrNot = sym === newSym;
-// console.log(checkSameOrNot);
+console.log(checkSameOrNot);
 
 
 
