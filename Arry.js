@@ -66,12 +66,12 @@ let marks1 = 90
 let marks2 = 95
 let marks3 = 99
 
-console.log(Array.of(marks1,marks2,marks3))
+console.log(Array.of(marks1, marks2, marks3))
 
 // Array method  
-// 1 isArray
-// 2 Array.from
-// 3 Array.of
+// 1 isArray 
+// 2 Array.from 
+// 3 Array.of 
 
 const myCar = ["W", "A", "G","N", "A", "R" ]
 
@@ -105,3 +105,4 @@ const familyy = [...perents, ... siblings]
 console.log(familyy);
 
 
+ 

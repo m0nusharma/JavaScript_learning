@@ -9,14 +9,14 @@ const myObj = {
 };
 
 for (const key in myObj) {
-  // console.log(`${key} is shortcut of ${myObj[key]}`); // this is how we get value of object in forIn loop.
+  console.log(`${key} is shortcut of ${myObj[key]}`); // this is how we get value of object in forIn loop.
 }
 
 // in array
 const languages = ["js", "py", "java", "ruby", "html", "css", "react"];
 
 for (const key in languages) {
-  // console.log(key); // is print a index value value of array..
+ console.log(key); // is print a index value value of array..
     console.log(languages[key]); // in this we get value of array
 }
 

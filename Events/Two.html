@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p class="p">Click start to change color</p>
+    <p id="PTag"></p>
+    <button class="start">Start</button>
+    <button class="stop">stop</button>
+  </body>
+  <script>
+    const heading = document.querySelector("h1");
+    const paraG = document.querySelector(".p");
+    const startBtn = document.querySelector(".start");
+    const stopBtn = document.querySelector(".stop");
+    const Ptag = document.querySelector("#PTag");
+
+    // startBtn.addEventListener("click", function () {
+    //   setTimeout(function () {
+    //     heading.innerHTML = "I am Changing color";
+    //   }, 2000);
+    // });
+
+    // this is call by raffrance
+    let cleanUp;
+    const changeText = function () {
+      heading.innerHTML = "I am Changing color";
+      paraG.innerHTML = "Do I look good?";
+    };
+    startBtn.addEventListener("click", function () {
+      cleanUp = setTimeout(changeText, 2000);
+    });
+    startBtn.addEventListener("click", function () {
+      Ptag.innerHTML = "I am Monu Sharma";
+    });
+
+    stopBtn.addEventListener("click", () => {
+      clearTimeout(cleanUp);
+      console.log("stopeed");
+    });
+  </script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body style="background-color: #212121; color: #ffff">
+    <h1 class="heading">Hello World</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <ul class="language">
+      <li>javascript</li>
+    </ul>
+  </body>
+  <script>
+    // select value and edit
+    const heading = document.querySelector(".heading");
+    heading.innerHTML = "<h1>Monu Sharma</h1>";
+    heading.style.color = "red";
+
+    // ******************create value*************
+    function language(language) {
+      const li = document.createElement("li");
+      li.innerHTML = `${language}`;
+      document.querySelector(".language").appendChild(li);
+    }
+    language("python");
+
+    function optiLanguage(langname) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langname));
+      document.querySelector(".language").appendChild(li);
+    }
+    optiLanguage("css");
+    optiLanguage("html");
+
+    // ****************** edit value***************
+
+    function sndLand(secondLang) {
+      const num2 = document.querySelector("li:nth-child(2)");
+      const newLi = document.createElement("li");
+      newLi.textContent = `${secondLang}`;
+      num2.replaceWith(newLi);
+    }
+    sndLand("Typescript");
+    // direct edit by innerHTML
+    const firstLang = document.querySelector("li:first-child");
+    firstLang.innerHTML = "mongoDB";
+    //  direct edit by outerHTML
+    const thrdLang = document.querySelector("li:nth-child(3)");
+    thrdLang.outerHTML = "<li>javascript</li>";
+
+    // *************remove************
+        const lastElement = document.querySelector("li:last-child")
+        lastElement.remove()
+  </script>
+</html>

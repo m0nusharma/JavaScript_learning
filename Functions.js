@@ -9,7 +9,7 @@ function myname() {
   console.log("U");
 }
 
-// myname // this is a reference if functions. this is not giving anything but is store a function. because this is just a reference.
+// myname // this is a reference of functions. this is not giving anything but is store a function. because this is just a reference.
 //  myname() // this is execute  is functions.
 
 // adding  two numbers
@@ -19,9 +19,9 @@ function addTwoNum(num1, num2) {
   //    console.log(num1 + num2,);
 }
 addTwoNum(3, 6); // (argument). this is arguments. // when we call functions thats is arguments,.
-const checkValue = addTwoNum(3, "6"); // (argument). this is arguments. // 6 is sting so js understand 3 is also strings.
-addTwoNum(3, null); // (argument). this is arguments.
-addTwoNum(3, "a"); // (argument). this is arguments.
+const checkValue = addTwoNum(3, "6"); // (argument). this is arguments. // 6 is sting so js understand 3 is also strings. 36
+addTwoNum(3, null); // (argument). this is arguments. 3
+addTwoNum(3, "a"); // (argument). this is arguments. 3a
 // we face some problems here. because in js we don't have to data type so js understand value by own mind.
 
 // another function
@@ -38,9 +38,9 @@ function addTwoNumbers(num1, num2) {
 const result = addTwoNumbers(5, 9); // pass a arguments // this is numbers type.
 // const result = addTwoNumbers(5,"9") // this is strings type.
 // const result = addTwoNumbers(5, undefined) // this is numbers  type.
-// console.log("result :", result);
+console.log("result :", result);
 
-// console.log(typeof result);
+console.log(typeof result);
 
 // another functions.
 

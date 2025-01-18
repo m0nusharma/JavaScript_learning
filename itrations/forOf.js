@@ -9,8 +9,10 @@ for (const myArr of arr) {
 
 // in string
  const str = "Hello World!"
+ console.log( str.length);
+
 for (const greet of str) {
-    // console.log(`each char is ${greet[arr.length]}`);
+    // console.log(`each char is ${greet}`);
 }
 
 //................map in forof....
@@ -22,17 +24,17 @@ map.set('UK', ' United Kingdom')
 map.set('Fr', 'France')
 map.set ('IN', 'India') // it cannot run.. because map cannot take same key and value in same map.
 
-// console.log(map);  // it run code we have seen here it execute like object...
+ console.log(map);  // it run code we have seen here it execute like object...
 
 // apply this forof loop
 
 for (const key of map) { // in this object execute as an array.
-    // console.log(key);
+     console.log(key);
     
 }
 
 for (const [key, value] of map) { // this is a real syntax to apply.
-    // console.log(key, " :-" , value);
+     console.log(key, " :-" , value);
 
 }
 
@@ -41,8 +43,7 @@ const obj = {
     'game1': "NFS",
     'game2': "PUBG"
 }
-for (const myGames of obj) {
-    console.log(myGames);
+// for (const myGames of obj) {
+//     // console.log(myGames);
     
-} //TypeError: obj is not iterable
-
+// } //TypeError: obj is not iterable
