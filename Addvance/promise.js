@@ -9,7 +9,7 @@ const promisesOne = new Promise(function (resolve, reject) {
   // do async Task
   // dataBase call CryptoGraphy ,network Call.
   setTimeout(function () {
-    //console.log("Async Task is complited");
+    //console.log("Async Task is complited";
     resolve(); // we have to call resolve here. than our then() will run.
   }, 1000);
 }); // promise take call back function in it.
@@ -62,7 +62,7 @@ promiseFour
 
 // catch the data by async and await keyword
 // but we need to face some problem because it directly can't  handle  error
-// to re4solve that problem we can use try or catch method
+// to re4solve that problem we can use try or catch method.
 const promiseFive = new Promise(function (resolve, reject) {
   setTimeout(() => {
     let error = true;
@@ -103,7 +103,7 @@ response(); // we need to call async function paras.
 // }
 // responseAPI();
 
-//  now we fetch data .then ot .catch
+//  now we fetch data .then or .catch
 
 fetch("https://my-json-server.typicode.com/typicode/demo/db")
   .then((responce) => {
