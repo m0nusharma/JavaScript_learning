@@ -27,7 +27,7 @@ myLilist[1].style.backgroundColor = "red"
 // const mylist = document.querySelectorAll("li")
 
 // mylist.forEach( function(list){
-//     list.style.color = "red";
+//     list.style.color = "red"; 
 //     list.style.backgroundColor = "blue";
 //     list.style.padding = "5px"
 //     list.style.textDecoration ="none"
