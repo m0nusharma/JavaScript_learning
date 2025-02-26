@@ -37,21 +37,39 @@ function LowerCase(str) {
 // LowerCase("Monu Sharma");
 
 // Write a JavaScript program to strip leading and trailing spaces from a string.
-let  spaces = "               this  is a  monu sharma"
- let  trimed = spaces.trim()
- console.log(trimed);
- 
+let spaces = "               this  is a  monu sharma";
+let trimed = spaces.trim();
+//  console.log(trimed);
 
- // 6 Write a JavaScript program to check if an element exists in an array or not.
- function checkValue(myArr) {
-    const arr = [ 1,2,3,4,5,6,7,8,9];
-    if(arr.indexOf(myArr) != true ){
-        console.log(`this element is not present in array ${myArr}`);
-    }else{
-        console.log(`this Element is present in Array  ${myArr}`);
-    }
-    return
- }
+// 6 Write a JavaScript program to check if an element exists in an array or not.
+function checkValue(myArr) {
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  if (arr.indexOf(myArr) != true) {
+    console.log(`this element is not present in array ${myArr}`);
+  } else {
+    console.log(`this Element is present in Array  ${myArr}`);
+  }
+  return;
+}
+//  checkValue(10)
 
- checkValue(10)
+// Write a JS program to delete all occurrences of element ‘num’ in an array.
 
+const Arr3 = [1, 2, 3, 4, 5, 6, 2, 3];
+let num = 2;
+
+for (let i = 0; i < Arr3.length; i++) {
+  if (Arr3[i] == num) {
+    Arr3.splice(i, 1);
+  }
+}
+// console.log(Arr3);
+
+const number = 1234512345;
+let count = 0;
+let copy = number;
+while (copy > 0) {
+  count++;
+  copy = Math.floor(copy / 10);
+}
+console.log(count);
