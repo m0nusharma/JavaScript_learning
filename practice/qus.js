@@ -68,28 +68,117 @@ function palin(str) {
 }
 // console.log(palin("monu"));
 
-4
+4;
 //Find the Most Frequent Character in a String
 // Write a program to find the character that appears most frequently in a given string.
 
 function frequentChar(str) {
-    const countChar = {};
-    for (const char of str) {
-        countChar[char] =(countChar[char] || 0) + 1;
-        
+  const countChar = {};
+  for (const char of str) {
+    countChar[char] = (countChar[char] || 0) + 1;
+  }
+  // return countChar
+  let maxCount = 0;
+  let Frequent = "";
+  for (const char in countChar) {
+    if (countChar[char] > maxCount) {
+      maxCount = countChar[char];
+      console.log(maxCount);
+      Frequent = char;
+      console.log(char);
     }
-    // return countChar
-    let maxCount = 0
-    let Frequent = ""
-    for (const char in countChar) {
-        if (countChar[char] > maxCount) {
-            maxCount = countChar[char]
-            console.log(maxCount);
-            Frequent = char
-            console.log(char);
-            
-        }
-    }
-    return Frequent
+  }
+  return Frequent;
 }
-console.log(frequentChar('hjvytfgdygwegtcdsftf'));
+console.log(frequentChar("hjvytfgdygwegtcdsftf"));
+
+// loops
+//1
+for (let i = 1; i < 10; i++) {
+  //  console.log(`${i}`);
+}
+//2
+for (let i = 2; i < 21; i += 2) {
+  // console.log(i)
+}
+//3
+let num = 11;
+while (num > 0) {
+  num--;
+  //console.log(`num : ${num}`)
+}
+//4
+let myNum = 1;
+for (let i = 1; i < 100; i++) {
+  myNum = myNum + i;
+}
+// console.log(myNum)
+
+//5
+let mystr = "hellow world";
+const reversedStr = mystr.split("").reverse().join("");
+//console.log(reversedStr)
+
+let str2 = "disha sharma";
+let reversed = "";
+for (let i = str.length - 1; i >= 0; i--) {
+  reversed += str2[i];
+}
+//console.log(reversed);
+
+// 6
+let str3 = "monu sharma";
+for (let char of str3) {
+  // console.log(char)
+}
+
+// 7
+
+let num3 = 0;
+do {
+  if (num3 % 2 !== 0) {
+    //console.log(num3)
+  }
+  num3++;
+} while (num3 < 15);
+
+// 8
+
+function isPrime(num) {
+  if (num % 2 === 0) {
+    console.log("this is prime number");
+  } else {
+    console.log("this is not a prime number");
+  }
+  return num;
+}
+
+//isPrime(5)
+//isPrime(6)
+
+// 9
+
+let num4 = 0;
+for (let i = 0; i < 10; i++) {
+  num4 = num4 + i;
+  //console.log(`${i} = ${num4}`)
+}
+
+let a = 0,
+  b = 1,
+  temp;
+for (let i = 1; i <= 10; i++) {
+  //console.log(a);
+  temp = a + b;
+  a = b;
+  b = temp;
+}
+
+// 10
+for (let i = 1; i <= 10; i++) {
+  console.log(`5 * ${i} = ${i * 5}`);
+}
+
+// array
+// 1
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
